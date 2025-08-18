@@ -2,7 +2,7 @@ class WrapperCard extends HTMLElement {
   setConfig(config) {
     this._config = config;
 
-    const card = document.createElement('custom:better-minimalistic-area-card');
+    const card = document.createElement('better-minimalistic-area-card');
     card.setConfig(config);
     this.innerHTML = '';
     this.appendChild(card);
