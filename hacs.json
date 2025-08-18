@@ -4,7 +4,7 @@
   "filename": "visualconfig-card.js",
   "type": "module",
   "render_readme": true,
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Visual Editor for Better Minimalistic Area Card",
   "resources": [
     {
