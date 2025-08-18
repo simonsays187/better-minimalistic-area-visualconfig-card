@@ -1,3 +1,5 @@
+import './visualconfig-card-editor.js';
+
 class WrapperCard extends HTMLElement {
   setConfig(config) {
     this._config = config;
@@ -18,7 +20,6 @@ class WrapperCard extends HTMLElement {
   }
 
   static async getConfigElement() {
-  await import('./visualconfig-card-editor.js');
   return document.createElement('better-minimalistic-area-visualconfig-card-editor');
   }
 
