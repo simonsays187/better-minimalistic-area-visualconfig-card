@@ -1,0 +1,17 @@
+{
+  "name": "Better Minimalistic Area Card Visual Editor",
+  "content_in_root": false,
+  "filename": "visualconfig-card.js",
+  "render_readme": true,
+  "description": "Visual Editor for Better Minimalistic Area Card",
+  "resources": [
+    {
+      "type": "module",
+      "url": "/local/visualconfig-card.js"
+    },
+    {
+      "type": "module",
+      "url": "/local/visualconfig-card-editor.js"
+    }
+  ]
+}
