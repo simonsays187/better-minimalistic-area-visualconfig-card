@@ -1,4 +1,4 @@
-class WrapperCardEditor extends HTMLElement {
+class BetterMinimalisticAreaVisualConfigCardEditor extends HTMLElement {
   setConfig(config) {
     this._config = config;
     this.render();
@@ -8,7 +8,6 @@ class WrapperCardEditor extends HTMLElement {
     this.innerHTML = `
       <ha-textfield label="Titel" value="${this._config.title || ''}" id="title"></ha-textfield>
       <ha-textfield label="Bereich" value="${this._config.area || ''}" id="area"></ha-textfield>
-      <!-- weitere Felder hier -->
     `;
   }
 
@@ -16,9 +15,11 @@ class WrapperCardEditor extends HTMLElement {
     return {
       title: this.querySelector('#title').value,
       area: this.querySelector('#area').value,
-      // weitere Optionen
     };
   }
 }
 
-customElements.define('better-minimalistic-area-visualconfig-card-editor', WrapperCardEditor);
+customElements.define(
+  'better-minimalistic-area-visualconfig-card-editor',
+  BetterMinimalisticAreaVisualConfigCardEditor
+);
