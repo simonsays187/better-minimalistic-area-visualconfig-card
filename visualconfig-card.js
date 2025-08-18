@@ -18,6 +18,7 @@ class WrapperCard extends HTMLElement {
   }
 
   static async getConfigElement() {
+  await import('./visualconfig-card-editor.js');
   return document.createElement('better-minimalistic-area-visualconfig-card-editor');
   }
 
