@@ -16,6 +16,11 @@ class WrapperCard extends HTMLElement {
   getCardSize() {
     return 3;
   }
+
+  static async getConfigElement() {
+  return document.createElement('better-minimalistic-area-visualconfig-card-editor');
+  }
+
 }
 
 customElements.define('better-minimalistic-area-visualconfig-card', WrapperCard);
