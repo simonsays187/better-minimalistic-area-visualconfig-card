@@ -1,4 +1,4 @@
-class BetterMinimalisticAreaEditor extends HTMLElement {
+class BetterMinimalisticAreaVisualconfigCardEditor extends HTMLElement {
   setConfig(config) {
     this._config = config;
     this._entities = config.entities || [];
@@ -177,8 +177,6 @@ class BetterMinimalisticAreaEditor extends HTMLElement {
 
   }
 }
-
-customElements.define('better-minimalistic-area-editor', BetterMinimalisticAreaEditor);
 
 customElements.define('better-minimalistic-area-visualconfig-card-editor', BetterMinimalisticAreaVisualconfigCardEditor);
 
