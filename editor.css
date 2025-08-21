@@ -1,0 +1,11 @@
+.section {
+  margin-bottom: 24px;
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+}
+
+.entity-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
