@@ -2,6 +2,7 @@ class BetterMinimalisticAreaVisualconfigCardEditor extends HTMLElement {
   setConfig(config) {
     this._config = config;
     this.render();
+    this._attachListeners();
   }
 
   render() {
@@ -17,6 +18,19 @@ class BetterMinimalisticAreaVisualconfigCardEditor extends HTMLElement {
       area: this.querySelector('#area').value,
     };
   }
+
+  _attachListeners() {
+    this.querySelector('#title').addEventListener('input', () => this._configChanged());
+    this.querySelector('#area').addEventListener('input', () => this._configChanged());
+  }
+
+  _configChanged() {
+    const newConfig = this.getConfig();
+    this.dispatchEvent(new CustomEvent('config-changed', {
+      detail: { config: newConfig }
+    }));
+  }
+
 }
 
 customElements.define('better-minimalistic-area-visualconfig-card-editor', BetterMinimalisticAreaVisualconfigCardEditor);
